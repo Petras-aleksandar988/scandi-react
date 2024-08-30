@@ -1,8 +1,6 @@
 import ProductItem from "./ProductItem";
 
-function DisplayProducts({ onSelectedProductsChange,products,error }) {
-
-
+function DisplayProducts({ onSelectedProductsChange, products, error }) {
   const handleCheckboxChange = (event) => {
     const productId = event.target.value;
     onSelectedProductsChange((prevSelected) =>
@@ -11,8 +9,6 @@ function DisplayProducts({ onSelectedProductsChange,products,error }) {
         : [...prevSelected, productId]
     );
   };
-
-
 
   return (
     <div className="grid-container">

@@ -93,11 +93,11 @@ function AddProduct() {
           <div className="label-input">
             <label htmlFor="type">Type Switcher:</label>
             <div className="input-notification">
-            <SelectType
-        formData={formData}
-        handleTypeChange={handleTypeChange}
-        errors={errors}
-      />
+              <SelectType
+                formData={formData}
+                handleTypeChange={handleTypeChange}
+                errors={errors}
+              />
             </div>
           </div>
           <DynamicFields
