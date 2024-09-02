@@ -9,7 +9,7 @@ function ProductItem({ product, onCheckboxChange }) {
       />
       <p>SKU: {product.sku}</p>
       <p>Name: {product.name}</p>
-      <p>Price: {product.price}</p>
+      <p>Price: {product.price} $</p>
       {product.product_type === "dvd" && <p>Size: {product.size} MB</p>}
       {product.product_type === "book" && <p>Weight: {product.weight}KG</p>}
       {product.product_type === "furniture" && (
