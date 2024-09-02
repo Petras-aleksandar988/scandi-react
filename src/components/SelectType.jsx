@@ -1,4 +1,3 @@
-import React from 'react';
 
 function SelectType({ formData, handleTypeChange, errors }) {
   return (

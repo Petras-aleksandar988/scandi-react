@@ -1,8 +1,4 @@
-import Navbar from "./components/Navbar"
-import DisplayProducts from "./components/DisplayProducts"
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom"
-import axios from "axios"
-import jQuery from "jquery"
 import MainLayout from "./components/MainLayout"
 import HomePage from "./pages/HomePage"
 import AddProduct from "./pages/AddProduct"
