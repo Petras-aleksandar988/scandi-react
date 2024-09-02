@@ -2,7 +2,7 @@
 include 'db.php';
 
 // Query to select all products
-$query = "SELECT * FROM produ ORDER BY id DESC";
+$query = "SELECT * FROM react ORDER BY id DESC";
 
 // Execute the query
 $result = $mysqli->query($query);

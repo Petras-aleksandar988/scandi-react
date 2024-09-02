@@ -16,7 +16,7 @@ if (isset($data['products']) && !empty($data['products'])) {
     $ids = implode(',', array_map('intval', $productIds));
 
     // SQL query to delete products with the given IDs
-    $query = "DELETE FROM produ WHERE id IN ($ids)";
+    $query = "DELETE FROM react WHERE id IN ($ids)";
 
     // Execute the query
     if ($mysqli->query($query)) {

@@ -19,14 +19,14 @@ if (isset($data['sku'], $data['name'], $data['price'], $data['type'])) {
     $length = isset($data['length']) ? $mysqli->real_escape_string($data['length']) : null;
     
     // Check if SKU is unique
-    $checkQuery = "SELECT * FROM produ WHERE sku = '$sku'";
+    $checkQuery = "SELECT * FROM react WHERE sku = '$sku'";
     $checkResult = $mysqli->query($checkQuery);
     
     if ($checkResult->num_rows > 0) {
         echo json_encode(['status' => 'errorSku']);
     } else {
         // Prepare the SQL query based on type
-        $query = "INSERT INTO produ (sku, name, price, product_type";
+        $query = "INSERT INTO react (sku, name, price, product_type";
         
         // Add optional fields to query if they exist
         if ($type === 'dvd') {
